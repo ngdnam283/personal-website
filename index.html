@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Sticky Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">NGDNAM</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner"></section>
+
+    <script type ="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            
+            <h1>I'm <span> Nam Nguyen<br></span></h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero fugit, provident, recusandae corporis repudiandae cupiditate quae placeat nostrum dignissimos nobis voluptates iste accusantium unde quis, quo vero eius laborum!</p>
+
+            <a hef="#"></a>
+
+        </div>
+
+        <div class="img-box">
+            <img src="my-image.jpg">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="my-image.jpg">
+        </div>
+
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend <span>Developer</span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quisquam quasi maiores quae praesentium magni. Omnis officiis magni, placeat, nobis culpa ab illo facilis recusandae repellendus sequi sint libero ea!</p>
+        </div>
+
+    </section>
+
+
+    <section class="portfolio">
+
+        <input id="ch" type="checkbox">
+        
+        <div class="portfolio-content">
+            <h3>My stock <span>Portfolio</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat a repudiandae sit cupiditate reiciendis odit, tempore ullam consequatur voluptate, animi necessitatibus inventore doloribus! Doloribus quia debitis labore numquam quisquam?</p>
+        </div>
+
+        <label id="read-more" for="ch">Read more</label>
+
+        <div class="container">
+            <div id="stock-list" class="content-table"></div> 
+            <div id="transaction-history"  class="content-table"></div>
+            <script src="script.js"></script>
+            <label for="ch">Show less</label>
+
+        </div>
+    
+    </section>
+
+    <section class="contact">
+        <h2>HI</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cum! Repudiandae neque placeat dolorum vitae ullam suscipit earum, cum praesentium magnam non veniam perferendis, soluta ad ab repellat fuga voluptas.</p>
+    </section>
+
+
+</body>
+</html>
