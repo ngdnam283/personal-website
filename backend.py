@@ -130,8 +130,8 @@ def main():
 
 
     # Create DataFrame from the list of dictionaries
-    stock_df = pd.DataFrame(stock_list)
-    print(stock_df)
+    # stock_df = pd.DataFrame(stock_list)
+    # print(stock_df)
 
 
 if __name__ == "__main__":
